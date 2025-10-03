@@ -1,6 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import "tailwindcss";
 
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --text-theme-xs: 0.75rem;
+  --text-theme-sm: 0.875rem;
+  --text-theme-xl: 1.5rem;
+  --shadow-theme-xs: 0 1px 2px 0 rgb(15 23 42 / 0.08);
+  --shadow-theme-sm: 0 4px 6px -1px rgb(15 23 42 / 0.12);
+  --shadow-theme-md: 0 12px 24px -10px rgb(15 23 42 / 0.18);
+  --shadow-theme-lg: 0 20px 45px -15px rgb(15 23 42 / 0.25);
+  --shadow-theme-xl: 0 32px 60px -20px rgb(15 23 42 / 0.35);
+  --shadow-focus-ring: 0 0 0 4px rgb(99 102 241 / 0.35);
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #818cf8;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+  --color-brand-800: #3730a3;
+  --color-brand-900: #312e81;
+  --color-brand-950: #1e1b4b;
+  --color-gray-dark: #111827;
+  --color-dark-900: #0f172a;
+  --z-1: 1;
+  --z-999: 999;
+  --z-99999: 99999;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -156,22 +185,6 @@
   @apply !p-0 !pl-6;
 }
 
-.jvectormap-container {
-  @apply !bg-gray-50 dark:!bg-gray-900;
-}
-.jvectormap-region.jvectormap-element {
-  @apply !fill-gray-300 hover:!fill-brand-500 dark:!fill-gray-700 dark:hover:!fill-brand-500;
-}
-.jvectormap-marker.jvectormap-element {
-  @apply !stroke-gray-200 dark:!stroke-gray-800;
-}
-.jvectormap-tip {
-  @apply !bg-brand-500 !border-none !px-2 !py-1;
-}
-.jvectormap-zoomin,
-.jvectormap-zoomout {
-  @apply !hidden;
-}
 
 .stocks-slider-outer .swiper-button-next:after,
 .stocks-slider-outer .swiper-button-prev:after {
